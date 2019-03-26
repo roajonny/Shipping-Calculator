@@ -1,6 +1,5 @@
-#include <iostream>
-#include <iomanip>
-using namespace std;
+// learning c++ is the perfect time to brush up on the fundamentals! 
+
  /* Shipping cost calculator
   * Asks user for package dimension in inches
   * length, width, height - integers
@@ -12,6 +11,11 @@ using namespace std;
   * If package volume is greater than 100 cubic inches, 10% surcharge
   * If package volume is greater than 500 cubic inches, 25% surcharge
   */
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
 int main()
 {
     int length{}, width{}, height{};
@@ -24,6 +28,7 @@ int main()
     double tier1_surcharge {0.10* base_cost};
     double tier2_surcharge {0.25* base_cost};
     int package_volume{};
+ 
 cout << "Welcome to the package cost calculator" << endl;
 cout << "Enter length, width, and height of package separated by spaces: ";
 cin >> length >> width >> height;
